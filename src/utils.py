@@ -123,8 +123,6 @@ def split_train_val(
     train_data, val_data = train_test_split(
         data, test_size=val_pct, stratify=data[target], random_state=42
     )
-    print("train_data", train_data[target].value_counts().shape)
-    print("val_data", val_data[target].value_counts().shape)
     return train_data, val_data
 
 
